@@ -1,0 +1,70 @@
+\documentclass[10pt,a4paper]{book}
+\usepackage{graphicx}
+
+\begin{document}
+\small
+
+\begin{flushleft}
+  \textsf{\textbf{562 $|$ Introduction to Automata Theory, Formal Languages and Computation}}
+\end{flushleft}
+
+The P = NP problem was first introduced by S. Cook in his research paper ‘The complexity of theorem proving procedures’ in 1971 at the third annual ACM symposium on theory of computing. The Clay mathematical institute has declared a one million dollar prize for solving this question.
+
+Scott Aaronson of the MIT believes that ‘There is value for creative leaps in the world because
+P $not=$ NP. If P = NP, then everyone who could appreciate a symphony would be Mozart; everyone who
+could follow a step-by-step argument would be Gauss.’
+
+Still, research is on to find whether P = NP or P $not=$ NP. You can also try. If you succeed, then one million dollar is yours! No need for further study to get a job!
+
+\qquad
+
+\begin{flushleft}
+  \large \textbf{12.10} \; \textsf{\textbf{SAT and CSAT Problem}}
+
+  12.10.1 \; \textsf{Satisfiability Problem (SAT)}
+\end{flushleft}
+
+\!\!\!\!\!\!\!\!\!\!\!This problem plays an important role in NP problem. So, the discussion of this problem is very important
+before discussing topics such as NP complete, Cook’s theorem, etc.
+
+\textsl{In mathematics a formula is called satisfiable if it is possible to find an interpretation that makes the formula to return true.}
+
+\begin{flushleft}
+  \large 12.10.2 \; \textsf{Circuit Satisfiability Problem (CSAT)}
+\end{flushleft}
+
+\!\!\!\!\!\!\!\!\!\!\!A circuit consisting of AND, OR, and NOT GATE (because these three are called basic GATE) can be represented by a Boolean function. Each element of the circuit has a constant number of Boolean input and output. Boolean values are defined on the set of $\{0, 1\}$ where ‘0’ means FALSE and ‘1’ means TRUE.
+
+Symbolically, OR is represented as $\vee$ , AND is represented as $\wedge$ , and NOT is represented as $\neg$ . The truth tables representing these three gates can be found in Chapter 1.
+
+Given a Boolean function consisting of AND, OR, and NOT gate with single output. Is there an assignment of values to the circuit’s inputs in such a way as to make the function evaluate to TRUE? The C-SAT problem is sometimes called as Boolean satisfiability problem.
+
+Before discussing the details, we have to know some basic terms.
+
+\!\!\!\!\!\!\!\!\!\!\!\emph{\textsf{\textbf{Literal}}}: A literal is either a variable or negative of a variable. $X_{1}$ and $\neg$ $X_{1}$ are literal. $X_{1}$ and $\vee$$\neg$ $X_{1}$ always
+evaluate to true.
+
+\!\!\!\!\!\!\!\!\!\!\!\emph{\textsf{\textbf{Disjunction:}}}:Disjunction is defined as a logical formula having one or more literals separated only by
+ORs. $(X1 \vee \neg X2 \vee X3) $is a disjunction but $(X1 \vee \neg X2 \wedge X3)$ is not. Disjunction is sometimes referred to
+as clause.
+
+\!\!\!\!\!\!\!\!\!\!\!\emph{\textsf{\textbf{Conjunction:}}}:A logical conjunction is defi ned as an AND operation on two or more logical values.$(X_{1} \vee \neg X_{2}) \wedge (X_{2} \vee X_{3})$ is a logical conjunction.
+
+
+\!\!\!\!\!\!\!\!\!\!\!\emph{\textsf{\textbf{Conjunctive Normal Form (CNF):}}} A Boolean formula is known to be in conjunctive normal form if it is a conjunction of disjunction (clauses). A formula in CNF can contain only AND, OR, and NOT operations.
+A NOT operation can only be used as a part of literal. Like $\neg X_{2}$, but not $_{¬}(X_{2} \vee X_{3})$.
+
+The examples in (a), (b), and (c) are in CNF
+
+\begin{flushleft}
+  a) $(X_{1} \vee \neg X_{2}) \wedge (X_{2} \vee X_{3})$
+  
+  b) $(X_{1} \vee \neg X_{2} \vee X_{3}) \wedge (X_{2} \vee \neg X_{1})$
+  
+  c) $X_{1} \wedge (\neg X_{2} \wedge X_{3}) \wedge X_{3}$
+\end{flushleft}
+
+
+
+
+\end{document}
