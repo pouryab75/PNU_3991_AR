@@ -1,0 +1,111 @@
+\documentclass[10pt,a4paper]{book}
+\usepackage{graphicx}
+
+\begin{document}
+\small
+
+\begin{flushright}
+  \textsf{\textbf{Computational Complexity $|$ 563}}
+\end{flushright}
+
+The following three examples in (d), (e), and (f) are not in CNF
+
+\quad
+
+\quad d) $\neg (X1 \vee \neg X2) [NOT problem]$
+
+\quad e) $\neg X2 \vee (X1 \wedge X3) (AND problem)$
+
+\quad f ) $X1 \wedge (X2 \vee (X1 \wedge X3)) (OR problem)$
+
+\quad
+
+These three formulas can be converted to equivalent CNF as in (g), (h), and (i).
+
+\quad
+
+\quad g) $\neg X1 \wedge X2$
+
+\quad h) $(\neg X2 \vee X1) \wedge (\neg X2 \vee X3)$
+
+\quad i) $X1 \wedge (X2 \vee X1) \wedge (X2 \vee X3)$
+
+\quad
+
+CNF is used in SAT problems for detecting conflict and to remember partial
+
+assignments that do not work.
+
+\quad(In the context-free grammar chapter, we learnt about the Chomsky normal
+
+form. Do not mess this CNF with the conjunctive normal form.)
+
+\quad
+
+\textsf{\textbf{2 SAT:}} A SAT problem is called 2 SAT if the number of literals in each disjunction 
+
+(clause) is exactly 2.
+
+\textsf{\textbf{3 SAT:}} A SAT problem is called 3 SAT if the number of literals in each disjunction
+
+(clause) is exactly 3.
+
+\quad SAT is in NP because any assignment of Boolean values to Boolean variables 
+
+that are claimed to satisfy the given logical expression can be verified in polynomial
+ 
+time by a deterministic Turing machine. (Can be proved)
+
+\;
+
+\textsl{\textbf{Prove that 2 SAT problem is in P}}
+
+\textsl{\textbf{Proof:}} Let $\phi$ be an instance of 2 SAT. Generate a graph $G(\phi)$ by the following 
+
+rules.
+
+1. Vertices of the graph G are the variables and their negations. If the number of 
+
+\quad variables is n, then the number of nodes is 2n.
+
+2. If there is a clause $(\neg \alpha \vee \beta)$ or $(\beta \vee \neg\alpha)$ in $\phi$, then an edge $\alpha \rightarrow \beta$ is added in 
+
+G.
+
+3. If there is an edge from $\alpha \rightarrow \beta$ in G, then an edge $\neg\beta \rightarrow \neg\alpha$ is added in 
+
+G.
+
+4. If there is a clause $(\alpha \vee \beta)$ in $\phi$, then two edges $\neg\alpha \rightarrow \beta$ and $\neg\beta \rightarrow \alpha$ are added
+
+in G.
+
+\quad
+
+Let us take an example $\phi = (x_{1} \vee x_{2}) \wedge (x_{1} \vee \neg x_{3}) \wedge (\neg x_{1} \vee x_{2}) \wedge (x_{2} \vee x_{3})$.
+
+1. There are three variables $x_{1}, x_{2}, and x_{3}$ in $\phi$. Thus, the graph contains 6 nodes
+ 
+namely $x_{1}, \neg x_{1}, x_{2},\neg x_{2}, x_{3}, and \neg x_{3}$.
+
+2. $(x_{1} \vee \neg x_{3})$ is in the form $(\beta \vee \neg \alpha)$. Thus, an edge $x_{3} \rightarrow x_{1}$ is added to G.
+ 
+According to the rule (c),an edge $(\neg x_{1} \rightarrow \neg x_{3})$ is also added to G.
+
+3. By the same rule, $x_{1} \rightarrow x_{2}$ and $(\neg x_{2} \rightarrow \neg x_{1})$ are also added to G.
+
+4. $(x_{1} \vee x_{2})$ is in the form $(\alpha \vee \beta)$. Thus, two edges $(\neg x_{1} \rightarrow x_{2})$ and $(\neg x_{3} \rightarrow x_{1})$ 
+
+are added to the graph.
+
+5. By the same rule, $(\neg x_{2} \rightarrow x_{3})$ and $(\neg x_{3} \rightarrow x_{2})$ are added to the graph for
+
+$(x_{2} \vee x_{3})$.
+
+$\phi$ is unsatisfi able if and only if there is a variable x such that there are edges from x to $\neg x$ and $\neg x$ to x in G.
+
+\footnotesize
+Suppose such x exists. x may have any value between 0 and 1. Consider x = 1 and an edge x to $\neg x$.
+(Consider x as $\alpha$ and $\neg x$ as $\beta$.) It means there is a clause $(\neg x \vee \neg x)$ or $(\neg x \vee \neg x)$ (both are the same)in $\phi$. The clause $(\neg x \vee \neg x)$ returns 0 if x = 1. This makes the total $\phi$ as 0 [because the sub-clauses are attached with $\wedge$] which means unsatisfiable.
+
+\end{document}
