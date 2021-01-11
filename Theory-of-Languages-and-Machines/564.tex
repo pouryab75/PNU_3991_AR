@@ -1,0 +1,68 @@
+\documentclass[10pt,a4paper]{book}
+\usepackage{graphicx}
+  % Requires \usepackage{graphicx}
+
+\begin{document}
+\small
+
+\begin{flushleft}
+  \textsf{\textbf{564 $|$ Introduction to Automata Theory, Formal Languages and Computation}}
+\end{flushleft}
+
+\begin{figure}[h]
+  \centering
+  % Requires \usepackage{graphicx}
+  \includegraphics[width=10cm]{1.1}\\
+\end{figure}
+
+The same thing is true for an edge $\neg x$ to x in G.
+
+For proving the ‘only if’ part, we have to take the help of contradiction. Consider
+
+$\phi$ is unsatisfi able.
+
+1. If there is a path from $\alpha$ to $\neg\alpha$ for a node $\alpha$, then $\alpha$ must be assigned to false.
+
+2. If there is no path from $\alpha$ to $\neg\alpha$ for a node $\alpha$, then those nodes which are
+
+reachable from $\alpha$ must be assigned to false. [According to the rule that if there is
+
+an edge $\alpha \rightarrow \beta$, then there are clauses $(\neg\alpha \vee \beta)$ or $(\beta \vee \neg\alpha) in \phi.]$
+
+3. Repeat this for all the nodes.
+
+\quad
+
+Now consider the previous graph. There is no edge from $x_{3}$ to $\neg x_{3}$.
+
+If $x_{3}$ is true, then $x_{1}$ must be false, because this was added for the sub-clause $(x_{1} \vee \neg x_{3})$ in $\phi$. There is an edge $x_{1} \rightarrow x_{2}$ for the clause $(¬x_{1} \vee x_{2})$ in $\phi $. If $x_{1}$ is true, then $x_{2}$ is false, which means $x_{3}$ must be
+false and $\neg x_{3}$ must be true.
+
+There is an edge $(\neg x_{2} \rightarrow x_{3})$ for the clause $(x_{2} \vee x_{3})$ in $\phi$. If $x_{2}$ is false, then $x_{3}$
+
+must be false.
+
+Here, we are getting the contradiction for $x_{3}$ and $\neg x_{3}$.
+
+It proves that step (2) cannot exist if $\phi$ is unsatisfiable, which justifies that $\phi$ is unsatisfiable if and only if there is a variable x such that there are edges from x to $\neg x$ and $\neg x$ to x in G.
+
+For a 2 SAT problem, if there are n variables, then the existence of an edge from x to $\neg x$ and $\neg x$ to x can be found within 2n steps. This signifies that 2 SAT is in P.
+
+\begin{flushleft}
+\emph{\textsf{\textbf{Prove that 3 SAT problem is in NP}}}
+
+\textsf{\textbf{\emph{Proof :}}} A SAT problem $\phi$ is called 3 SAT if the number of literals in each clause is exactly 3. Let F be a CNF SAT problem. We have to convert F to a 3 CNF SAT problem $F'$ such that if F is satisfiable, then $F'$ is also satisfiable. Let the problem F contain clauses $C_{1}, C_{2}….C_{k}$. Here, three cases of C may occur.
+
+\footnotesize
+1. Ci contains exactly 3 literals.
+
+2. Ci contains less than 3 literals.
+
+3. Ci contains more than 3 literals.
+
+\: We have to concentrate on cases (2) and (3).
+
+\textsl{\textbf{Solution for Case (2):}} If Ci contains less than 3 literals, then the number of literals may be 2 or 1. If it contains 1 literal, say $L_{1}$, then replace this by $(L_{1} \vee L_{1} \vee L_{1})$.
+\end{flushleft}
+
+\end{document}
