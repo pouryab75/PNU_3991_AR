@@ -21,7 +21,7 @@
 # ارائه شفاهی دو مساله از منابع دیگر با لاتک
 - [ارائه شفاهی دو مثال با لاتک]()
 - [beamer.pdf](https://github.com/pouryab75/PNU_3991_AR/blob/main/Theory-of-Languages-and-Machines/Beamer.pdf)
-- [beamer.tex](fgghj)
+- [beamer.tex](https://github.com/pouryab75/PNU_3991_AR/blob/main/Theory-of-Languages-and-Machines/Beamer.tex)
 
 
 
