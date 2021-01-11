@@ -16,7 +16,7 @@
 - [187.pdf](https://github.com/pouryab75/PNU_3991_AR/blob/main/Research-And-Presentation-Methods/22.pdf)
 - [187.tex](https://github.com/pouryab75/PNU_3991_AR/blob/main/Research-And-Presentation-Methods/22.tex)
 - [188.pdf](https://github.com/pouryab75/PNU_3991_AR/blob/main/Research-And-Presentation-Methods/23.pdf)
-- [188.tex]()
+- [188.tex](https://github.com/pouryab75/PNU_3991_AR/blob/main/Research-And-Presentation-Methods/23.tex)
 - [189.pdf]()
 - [189.tex]()
 
