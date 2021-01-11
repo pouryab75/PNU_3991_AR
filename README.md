@@ -16,12 +16,12 @@
 > ارزیابی ها
 
 ##  بخش عمومی
-- [ارزیابی رزومه و انگیزه نامه](https://github.com/rezvaneh77/PNU_3991_AR/blob/main/_General/RN_CV_CheckList_AR_3991.pdf)
-- [خلاصه ارزیابی بخش عمومی](https://github.com/rezvaneh77/PNU_3991_AR/blob/main/_General/RN_GeneralSection_CheckList_AR_3991.pdf)
+- [ارزیابی رزومه و انگیزه نامه]()
+- [خلاصه ارزیابی بخش عمومی]()
 
 ## بخش دروس کارشناسی
-- [خلاصه ارزیابی درس_نظریه زبان ها و ماشین ها ](https://github.com/rezvaneh77/PNU_3991_AR/blob/main/Theory-of-Languages-and-Machines/RN_Theory_of_Languages_and_Machines_CheckList_AR_3991.pdf)
-- [خلاصه ارزیابی درس_روش پژوهش و ارائه](https://github.com/rezvaneh77/PNU_3991_AR/blob/main/Research-And-Presentation-Methods/RN_ResearchAndPresentationMethods_CheckList_AR_3991.pdf)
+- [خلاصه ارزیابی درس_نظریه زبان ها و ماشین ها ]()
+- [خلاصه ارزیابی درس_روش پژوهش و ارائه]()
 -------------
 
 ## گروه ها
