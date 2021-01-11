@@ -10,7 +10,7 @@
 
 # ارائه نوشتاری درس از منابع دیگر با لاتک
 - [561.pdf](https://github.com/pouryab75/PNU_3991_AR/blob/main/Theory-of-Languages-and-Machines/561.pdf)
-- [561.tex](tyu)
+- [561.tex](https://github.com/pouryab75/PNU_3991_AR/blob/main/Theory-of-Languages-and-Machines/561.texu)
 - [562.pdf](tfu)
 - [562.tex](rdy)
 - [563.pdf](rfu)
