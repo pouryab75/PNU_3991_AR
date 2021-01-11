@@ -14,7 +14,7 @@
 
 # ارائه کتبی با لاتک از منابع دیگر به زبان اصلی
 - [187.pdf](https://github.com/pouryab75/PNU_3991_AR/blob/main/Research-And-Presentation-Methods/22.pdf)
-- [187.tex]()
+- [187.tex](https://github.com/pouryab75/PNU_3991_AR/blob/main/Research-And-Presentation-Methods/22.tex)
 - [188.pdf]()
 - [188.tex]()
 - [189.pdf]()
