@@ -15,7 +15,7 @@
 - [562.tex](https://github.com/pouryab75/PNU_3991_AR/blob/main/Theory-of-Languages-and-Machines/562.tex)
 - [563.pdf](https://github.com/pouryab75/PNU_3991_AR/blob/main/Theory-of-Languages-and-Machines/563.pdf)
 - [563.tex](https://github.com/pouryab75/PNU_3991_AR/blob/main/Theory-of-Languages-and-Machines/563.tex)
-- [564.pdf](rfgh)
+- [564.pdf](https://github.com/pouryab75/PNU_3991_AR/blob/main/Theory-of-Languages-and-Machines/564.pdf)
 - [564.tex](gghh)
 
 # ارائه شفاهی دو مساله از منابع دیگر با لاتک
