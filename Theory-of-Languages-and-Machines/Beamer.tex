@@ -1,0 +1,65 @@
+\documentclass [12pt]{beamer}
+\usepackage{xcolor}	
+\usepackage{tikz}
+\usetheme{Warsaw}
+\useoutertheme{infolines}
+\usepackage{ragged2e}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\begin{document}
+
+\section*{mesal 12.15 , 12.16 }
+\subsection*{poriya bedaghi  }	
+\begin{frame}
+\justifying
+Example 12.15 \textbf{ Vertex Cover Problem:} It is one type of optimization problem in computer science. Given a graph $\mathrm{G}$, the aim is to find the minimum vertex cover $\mathrm{C} \subseteq \mathrm{G}$. Given a graph $G=\{V, E\}$ and an integer $k \leq V$, the problem is to find $V^{\prime}$, subset of at most $k$ vertices, such that each edge of $G$ is incident to at least one vertex in $V^{\prime}$.
+
+The algorithm can be constructed by assuming a set of $\mathrm{k}$ vertices $\mathrm{C}$ for a given graph $\mathrm{G}$. We have to check whether there exists a vertex cover of $\leq \mathrm{k}$ vertices. The checking can be done by the following steps.
+
+
+i) Check whether $\mathrm{C}$ contains at most $\mathrm{k}$ number of vertices.
+
+
+ii) Check whether $\mathrm{C}$ is a vertex cover of $\mathrm{G}$.
+$$
+\begin{array}{l}
+	\text { Input } G=\{V, E\}, C=\left\{V^{\prime}\right\} \text { where }\left|V^{\prime}\right| \leq k \\
+	\text { for } i=1 \text { to }|E|\\
+\end{array}
+$$
+\begin{center}
+	
+check the edges ends on $\mathrm{V}^{\prime}$ i 
+
+
+remove them from $\{\mathrm{E}\}$. 
+
+
+End
+
+\end{center}
+\end{frame}
+
+\begin{frame}
+
+Thus, this checking operation is performed in $\mathrm{O}\left(\left|\mathrm{V}^{\prime}\right|+|\mathrm{E}|\right.$ ) i.e. in polynomial time. A graph with n number of vertices can have $2^{n}$ number of such vertex combination. For each of the combinations, the same checking algorithm is performed. Among these, the set of vertices with minimum number is the minimum vertex cover of G. So, a minimum vertex cover algorithm is carried out by a non-deterministic Turing machine in polynomial time.
+
+\end{frame}
+
+\begin{frame}
+	
+Example 12.16 Prove that 3 SAT is NP complete.
+
+
+\textbf{Solution:}
+
+
+i) 3 SAT is clearly in NP, given an instance of a circuit $\mathrm{C}$ and a 'satisfying' setting of Boolean variables. A simulation of the circuit can easily check in polynomial time whether the output is 1 or not.
+
+
+ii) A SAT problem $\varphi$ is called 3 SAT if the number of literals in each clause is exactly $3 .$ It is already shown how a SAT formula with clauses less than or more than 3 literals can be converted to a formula with clauses each having exactly 3 literals. This conversion can be made in polynomial time. Hence, SAT can be reduced to 3 SAT in polynomial time. So 3 SAT is NP complete.	
+	
+	
+	
+\end{frame}	
+\end{document}
