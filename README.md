@@ -12,6 +12,7 @@
 
 - [SOP](https://pouryab75.github.io/SOP/)
 - [JavaScript certificate](IMG-20201129-WA0006.jpg)
+- [jlord](https://github.com/pouryab75/PNU_3991_AR/blob/main/jlord.png)
 -----------------
 > ارزیابی ها
 
